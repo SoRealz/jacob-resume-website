@@ -1,0 +1,94 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 30px;
+    padding: 0;
+    color:black;
+}
+
+/* Style main container */
+#main_container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* Style section 1 */
+#section1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Style each box in Section 1 */
+.box {
+    text-align: center;
+    padding: 70px;
+    background-color: white;
+}
+
+#box1 img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+/* Apply different styling using class, id, element type, attribute, and pseudo-class selectors */
+#box1, #box2, #box3{
+    border: 1px solid black;
+}
+
+.box p {
+    font-style: italic;
+}
+
+#box1 h1 {
+    
+    color: grey;
+}
+
+.box:hover {
+    background-color: white;
+}
+
+/* Add borders to Section 2 and Section 3 */
+#section2, #section3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 20px; /* Reduced padding for consistency */
+}
+
+/* Style each box within Section 2 and Section 3 */
+#box4, #box5, #box6, #box7, #box8 {
+    margin-bottom: 15px;
+    width: 48%;
+}
+
+/* Add specific styles to Section 2 boxes */
+#box4, #box5 {
+    
+    background-color: white;
+}
+
+/* Add specific styles to Section 3 boxes */
+#box6, #box7, #box8 {
+    background-color: #white;
+}
+
+/* Responsive styling */
+@media only screen and (max-width: 768px) {
+    #main_container {
+        width: 90%;
+    }
+
+    #section1, #section2, #section3 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
