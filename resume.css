@@ -1,32 +1,30 @@
 /* Reset some default styles */
 body {
+    display: flex;
     margin: 30px;
-    padding: 0;
+    padding: 0px;
     color:white;
-    background-color: rgba(10, 2, 101, 0.883);
-
-
-}
+    background-color: rgba(10, 2, 101, 0.883);}
 
 
 
 
-  h1, h2, p {margin: 50px;
-    }
+  h1, h2, p {margin: 50px;}
    
 
 
 
 /* Style main container */
 #main_container {
+    display: flex;
+    flex: 1;
     width: 1350px;
-    margin: 0 auto;
-}
+    margin: 0 auto;}
 
 /* Style section 1 */
-#section1 , #section2 {
+#section1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 20px;
 }
@@ -42,11 +40,12 @@ body {
 #box1 img {
     width: 100px;
     border-radius: 50%;
+    color:grey;
 }
 
 /* Apply different styling using class, id, element type, attribute, and pseudo-class selectors */
 #box1, #box2, #box3{
-    border: 1px solid black;
+    border: 5px solid black;
     
 }
 
@@ -54,10 +53,7 @@ body {
     font-style: italic;
 }
 
-#box1 h1 {
-    
-    color: grey;
-}
+
 
 .box:hover, #box4:hover, #box5:hover, #box5:hover, #box6:hover, #box7:hover, #box8:hover, #box9:hover{
     background-color: rgba(32, 132, 186, 0.64);
@@ -69,7 +65,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
-    border: 1px solid black;
+    border: 5px solid black;
     padding: 5px; /* Reduced padding for consistency */
     width: 47%; /* Adjust the width as needed */
 }
@@ -95,15 +91,5 @@ body {
 @media only screen and (max-width: 768px) {
     #main_container {
         width: 95%;
-    }
-
-    #section1, #section2, #section3 {
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .box {
-        width: 100%;
     }
 }
